@@ -1,0 +1,468 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+html {
+    box-sizing: border-box;
+}
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: normal;
+    color: #323232;
+}
+.about_p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    color: #727272;
+}
+
+/* img {
+    max-width: 100%;
+    height: auto;
+} */
+.wrapper {
+    max-width: 1105px;
+    margin: 0 auto;
+}
+
+/***************** header ************/
+
+.logo_comp:hover {
+    animation: tada 1s;
+}
+nav.header_nav ul li a {
+  position: relative;
+}
+nav.header_nav ul li a:after {
+  position: absolute;
+  top: 55px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '.';
+  color: transparent;
+  background: #34547A;;
+  height: 1px;
+}
+nav.header_nav ul li a:hover:after {
+  width: 100%;
+  transition: all .5s;
+}
+
+.banner_tick{
+    text-align: right;
+    top: 0px;
+    right: 0px;
+}
+
+.banner_tick samp {
+    font-size: 1.5em;
+    font-weight: 700;
+    color: #4c57f1;
+}
+.header_wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding-top: 79px;
+}
+.header_list {
+    display: flex;
+    flex-wrap: wrap;
+}
+.header_item {
+    margin-right: 42px;
+}
+.header_link1 {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.1em;
+    color: #34547A;
+    text-decoration: none;
+}
+.header_link {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.1em;
+    color: #000000;
+    text-decoration: none;
+}
+
+.header_bot {
+    padding-top: 162px;
+    display: flex;
+    justify-content: center;
+  }
+.header_h1 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 79px;
+  }
+
+.header_p {
+    padding-top: 60px;
+    display: block;
+    width: 540px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+    color: #727272;
+    padding-bottom: 60px;
+  }
+  
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    text-decoration: none;
+    text-align: center;
+    letter-spacing: 0.1em;
+    color: #FFFFFF;
+    width: 225px;
+    height: 65px;
+    background: #34547A;
+}
+.button:hover {
+    opacity: 0.85;
+}
+  .header_text {
+    padding-left: 131px;
+  }
+  
+/************ header ************/
+
+
+/************ About ************/
+.about {
+    background: #F9F9F9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+.about_h1 {
+    padding: 119px 0 50px 0;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 37px;
+    color: #000000;
+  }
+.about_p {
+    padding-bottom: 100px;
+    /* font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    color: #727272; */
+    width: 540px;
+  }
+/************ About ************/
+
+/************ Obj ************/
+.projects {
+    height: 250px;
+    background: #34547A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.projects_item {
+    margin-left: 49px;
+    width: 141px;
+    height: 50px;
+    display: flex;
+}
+.projects_text {
+    padding-left: 20px;
+}
+.projects_h2 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 25px;
+    color: #FFFFFF;
+}
+.projects_h3 {
+    padding-top: 10px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+    color: #FFFFFF;
+}
+/************ Obj ************/
+
+/************ Skills ************/
+.skills {
+    height: 653px;
+    background: #F9F9F9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.skills_h1 {
+    padding-bottom: 50px;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 37px;
+    color: #000000;
+}
+.skills_list {
+    min-width: 375px;
+    max-width: 445px;
+}
+.skills_ul {
+    list-style-type: none;
+}
+.skills_underline {
+    margin-top: 20px;
+    width: 445px;
+    height: 4px;
+    background: #C4C4C4;
+}
+
+.underline {
+    width: 349.36px;
+    height: 4px;
+    background: #34547A;
+}
+.skills_item {
+    margin-top: 30px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+    color: #727272;
+}
+
+.my-photo {
+    width: 555px;
+    padding-left: 150px;
+}
+/************ Skills ************/
+
+
+/************ Working ************/
+.working {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 1004px;
+    background: #EEEFF1;
+  }
+.working_h1 {
+    margin-top: 100px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 37px;
+    text-align: center;
+    color: #000000;
+}
+.working_p {
+    margin-top: 50px;
+    margin-bottom: 57px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    color: #727272;
+    width: 540px;
+    height: 67px;
+}
+.working_photo {
+    width: 1110px;
+}
+
+/************ Working ************/
+
+
+/************ Works ************/
+.works {
+    width: 1920px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background: #F9F9F9;
+}
+.works_link {
+    display: block;
+    width: 480px;
+    height: 480px;
+}
+.works_link {
+    width: 480px;
+    height: 480px;
+    display: block;
+    position: relative;
+}
+.works_bg {
+    width: 480px;
+    height: 480px;
+}
+.works_bg-img {
+    width: 480px;
+    height: 480px;
+}
+.works_hover {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    width: 480px;
+    height: 480px;
+    background-color: rgba(52, 84, 122, 0.8);
+    -webkit-transition: all .4s;
+    transition: all .4s;
+}
+.works_item:hover {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+    transition: all .5s;
+  }
+  
+.works_container {
+    width: 480px;
+    height: 480px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+
+/************ Works ************/
+
+
+/************ Label ************/
+.label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 292px;
+    background: #F9F9F9;
+    flex-wrap: wrap;
+  }
+
+.label_img {
+    width: 255px;
+    height: 120px;
+}
+.label_link {
+    margin-left: 30px;
+}
+
+
+/************ Label ************/
+
+/************ Feedback ************/
+.feedback {
+    background-color: #EEEFF1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 762px;
+}
+
+.form_name {
+    width: 255px;
+    height: 50px;
+    padding: 10px 20px;
+    background: #FFFFFF;
+    border: none;
+}
+.form_email {
+    margin-left: 30px;
+    width: 255px;
+    height: 50px;
+    padding: 10px 20px;
+    background: #FFFFFF;
+    border: none;
+}
+.form_text {
+    padding: 15px;
+    margin-top: 20px;
+    width: 540px;
+    height: 175px;
+    background: #FFFFFF;
+    border: none;
+    resize: none;
+    margin-bottom: 50px;
+}
+.center {
+    display: flex;
+    justify-content: center;
+}
+.button2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    text-decoration: none;
+    text-align: center;
+    letter-spacing: 0.1em;
+    color: #FFFFFF;
+    width: 190px;
+    height: 55px;
+    background: #34547A;
+    border: none;
+}
+.button2:hover {
+    opacity: 0.85;
+}
+/************ Feedback ************/
+
+
+/************ Footer ************/
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 151px;
+    background: #34547A;
+  }
+.copy_h2 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 25px;
+    color: #FFFFFF;
+}
+.copy_p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 21px;
+    color: #FFFFFF;
+}
+.socials {
+    padding-left: 757px;
+}
+.socials_img {
+    margin-left: 22px;
+}
+
+/************ Footer ************/
+
+
